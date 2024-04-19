@@ -1,4 +1,37 @@
 .homes{
-    background-color: $color-secondary;
     grid-column: center;
+    margin: 15rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+
+    .home {
+        background-color: $color-grey-light-1;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__like{
+            width: 2rem
+        }
+        
+        &__name {
+            width: 2rem
+        }
+
+        &__location {
+            width: 2rem
+        }
+
+        &__rooms {
+            width: 2rem
+        }
+
+        &__area {
+            width: 2rem
+        }
+    }
 }
